@@ -21,7 +21,7 @@ export default function Layout() {
                     ),
                 }} />
 
-                <Drawer.Screen name="cliente/index" options={{
+                <Drawer.Screen name="cliente/index"  options={{
                     title: "Clientes",
                     drawerIcon: ({ color }) => (
                         <FontAwesome name="users" size={24} color={color} />
@@ -30,6 +30,14 @@ export default function Layout() {
 
                  <Drawer.Screen name="newCliente/index" options={{
                     title: "Novo Clientes",
+                    drawerIcon: ({ color }) => (
+                        <FontAwesome name="users" size={24} color={color} />
+                    ),
+                }} />
+
+                 <Drawer.Screen name="updateClient/index" options={{
+                    title: "Atualizar Clientes",
+                    drawerItemStyle: { display: 'none' },
                     drawerIcon: ({ color }) => (
                         <FontAwesome name="users" size={24} color={color} />
                     ),
