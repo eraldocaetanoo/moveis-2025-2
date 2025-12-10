@@ -21,6 +21,21 @@ export default function Layout() {
                     ),
                 }} />
 
+                <Drawer.Screen name="newProduto/index" options={{
+                    title: "Novo Produto",
+                    drawerIcon: ({ color }) => (
+                        <FontAwesome name="amazon" size={24} color={color} />
+                    ),
+                }} />
+
+                <Drawer.Screen name="updateProduto/index" options={{  
+                    title: "Atualizar Produto",
+                    drawerItemStyle: { display: 'none' },
+                    drawerIcon: ({ color }) => (
+                        <FontAwesome name="amazon" size={24} color={color} />
+                ),      
+                }} />
+
                 <Drawer.Screen name="cliente/index"  options={{
                     title: "Clientes",
                     drawerIcon: ({ color }) => (
